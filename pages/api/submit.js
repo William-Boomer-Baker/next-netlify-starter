@@ -1,3 +1,6 @@
 export default async function handler(req, res) {
-  res.redirect("https://zen-shaw-bf2092.netlify.app/appointment")
+  res.writeHead(301, { // or 301
+      Location: "/appointment",
+    });
+    res.end();
 }
